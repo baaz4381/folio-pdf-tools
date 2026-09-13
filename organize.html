@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combine &amp; organize PDFs — Folio</title>
+<meta name="description" content="Merge PDFs, split them apart, remove or extract pages, rotate pages, or drag pages into a new order — all in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap site-bar">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 2h11l5 5v17H5z" stroke="var(--ink)" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M16 2v5h5" stroke="var(--ink)" stroke-width="1.6" stroke-linejoin="round"/>
+      </svg>
+      Folio
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="organize.html" aria-current="page">Combine &amp; organize</a>
+      <a href="convert.html">Convert</a>
+      <a href="edit.html">Edit &amp; finish</a>
+    </nav>
+  </div>
+</header>
+
+<section class="cat-hero wrap">
+  <a class="crumb" href="index.html">&larr; All tools</a>
+  <h1>Combine &amp; organize</h1>
+  <p class="lede">Bring pages together, or pull them apart. Merge multiple files, split one apart, remove or extract pages, rotate them the right way up, or drag them into a new order.</p>
+  <p class="fine-note">6 tools · files never leave your device</p>
+</section>
+
+<section class="tools-section wrap" id="tools">
+  <div id="tool-grid" class="grid"></div>
+</section>
+
+<section id="workspace">
+  <div class="wrap">
+    <div class="ws-head">
+      <div>
+        <h2 id="ws-title">Tool</h2>
+        <p id="ws-desc"></p>
+      </div>
+      <button class="ws-close" onclick="closeWorkspace()" aria-label="Close">&#10005;</button>
+    </div>
+    <div id="ws-body" class="ws-body"></div>
+  </div>
+</section>
+
+<section class="cross wrap">
+  <h2>Other tools</h2>
+  <div class="cross-grid">
+    <a class="cross-link" href="convert.html">
+      <div>
+        <div class="cl-label">Convert</div>
+        <div class="cl-desc">Move content between PDF and image files.</div>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+    <a class="cross-link" href="edit.html">
+      <div>
+        <div class="cl-label">Edit &amp; finish</div>
+        <div class="cl-desc">Page numbers, watermarks, and compression.</div>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Folio — built with pdf-lib and pdf.js.</span>
+    <span>A demonstration site.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+const { PDFDocument, degrees, rgb, StandardFonts } = PDFLib;
+</script>
+<script src="app.js"></script>
+<script>initToolGrid('organize');</script>
+</body>
+</html>
