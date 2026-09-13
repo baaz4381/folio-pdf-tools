@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Folio — PDF tools that stay on your device</title>
+<meta name="description" content="Merge, split, organize, convert and finish PDF files. Everything runs in your browser — files are never uploaded anywhere.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap site-bar">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 2h11l5 5v17H5z" stroke="var(--ink)" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M16 2v5h5" stroke="var(--ink)" stroke-width="1.6" stroke-linejoin="round"/>
+      </svg>
+      Folio
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="organize.html">Combine &amp; organize</a>
+      <a href="convert.html">Convert</a>
+      <a href="edit.html">Edit &amp; finish</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div>
+    <h1>Every tool for your PDFs, without the upload.</h1>
+    <p class="lede">Merge, split, organize, convert and finish PDF files right in your browser. Nothing is sent to a server — the processing happens on your device.</p>
+    <div class="hero-actions">
+      <a class="btn" href="organize.html">Browse tools</a>
+      <span class="fine-note">11 tools · no sign-up</span>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 220 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g transform="rotate(-6 110 100)">
+        <rect x="46" y="30" width="110" height="140" fill="#FBF8EF" stroke="var(--line)" stroke-width="1.5"/>
+      </g>
+      <g transform="rotate(4 110 100)">
+        <rect x="52" y="24" width="110" height="140" fill="#FBF8EF" stroke="var(--line)" stroke-width="1.5"/>
+        <line x1="68" y1="52" x2="140" y2="52" stroke="var(--line)" stroke-width="1.5"/>
+        <line x1="68" y1="66" x2="140" y2="66" stroke="var(--line)" stroke-width="1.5"/>
+        <line x1="68" y1="80" x2="120" y2="80" stroke="var(--line)" stroke-width="1.5"/>
+      </g>
+      <g transform="rotate(-2 110 100)">
+        <rect x="58" y="18" width="110" height="140" fill="#FFFDF7" stroke="var(--ink)" stroke-width="1.6"/>
+        <line x1="74" y1="46" x2="150" y2="46" stroke="var(--line)" stroke-width="1.5"/>
+        <line x1="74" y1="60" x2="150" y2="60" stroke="var(--line)" stroke-width="1.5"/>
+        <line x1="74" y1="74" x2="126" y2="74" stroke="var(--line)" stroke-width="1.5"/>
+        <line x1="74" y1="96" x2="150" y2="96" stroke="var(--line)" stroke-width="1.5"/>
+        <line x1="74" y1="110" x2="150" y2="110" stroke="var(--line)" stroke-width="1.5"/>
+        <line x1="74" y1="124" x2="132" y2="124" stroke="var(--line)" stroke-width="1.5"/>
+      </g>
+      <path d="M150 8 C170 8 172 26 156 30 L120 40 C108 43 106 30 116 27 L142 20" stroke="var(--stamp)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+</section>
+
+<section class="wrap">
+  <div id="home-cats" class="home-cats"></div>
+</section>
+
+<section class="info wrap">
+  <h2 style="font-size:24px;">Why it works this way</h2>
+  <div class="info-grid">
+    <div>
+      <h3>Files stay put</h3>
+      <p>Every tool runs with JavaScript already loaded in your browser. Your PDF is never transmitted anywhere to be processed.</p>
+    </div>
+    <div>
+      <h3>No accounts, no limits</h3>
+      <p>There's nothing to sign up for and no daily cap. Open a tool, drop a file, download the result.</p>
+    </div>
+    <div>
+      <h3>Works offline once loaded</h3>
+      <p>After the page has loaded, most tools keep working even without a connection, since there's no server round-trip.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Folio — built with pdf-lib and pdf.js.</span>
+    <span>A demonstration site.</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script>initHomeCards();</script>
+</body>
+</html>
