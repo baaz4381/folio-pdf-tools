@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Edit &amp; finish PDFs — Folio</title>
-<meta name="description" content="Add page numbers, stamp a watermark, or compress a PDF — all in your browser.">
+<meta name="description" content="Add page numbers, stamp a watermark, compress a PDF, or reduce its size to a custom quality — all in your browser.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -33,8 +33,8 @@
 <section class="cat-hero wrap">
   <a class="crumb" href="index.html">&larr; All tools</a>
   <h1>Edit &amp; finish</h1>
-  <p class="lede">Small finishing touches before you send a file: stamp page numbers on, add a diagonal watermark, or rebuild the file to shrink it.</p>
-  <p class="fine-note">3 tools · files never leave your device</p>
+  <p class="lede">Small finishing touches before you send a file: stamp page numbers on, add a diagonal watermark, rebuild the file to shrink it, or reduce it to a custom size and quality.</p>
+  <p class="fine-note">4 tools · files never leave your device</p>
 </section>
 
 <section class="tools-section wrap" id="tools">
@@ -82,7 +82,9 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
 const { PDFDocument, degrees, rgb, StandardFonts } = PDFLib;
 </script>
 <script src="app.js"></script>

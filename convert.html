@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Convert PDFs &amp; images — Folio</title>
-<meta name="description" content="Turn images into a PDF, or turn PDF pages into images — all in your browser.">
+<title>Convert PDFs, images &amp; Word — Folio</title>
+<meta name="description" content="Turn images into a PDF, turn PDF pages into images, or convert between PDF and Word — all in your browser.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -33,8 +33,8 @@
 <section class="cat-hero wrap">
   <a class="crumb" href="index.html">&larr; All tools</a>
   <h1>Convert</h1>
-  <p class="lede">Move content between PDF and image files. Turn a batch of JPGs or PNGs into a single PDF, or save every page of a PDF as its own image.</p>
-  <p class="fine-note">2 tools · files never leave your device</p>
+  <p class="lede">Move content between PDF, image and Word files. Turn a batch of JPGs or PNGs into a single PDF, save every page of a PDF as its own image, or convert between PDF and Word.</p>
+  <p class="fine-note">4 tools · files never leave your device</p>
 </section>
 
 <section class="tools-section wrap" id="tools">
@@ -84,6 +84,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
 <script>
 pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
 const { PDFDocument, degrees, rgb, StandardFonts } = PDFLib;
